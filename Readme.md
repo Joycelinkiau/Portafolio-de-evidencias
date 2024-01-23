@@ -39,6 +39,21 @@ Además, tambien se dijo que debe existir un equilibrio entre los aspectos del U
 
 <img src="./tarea_994_ joykiau.png" />
 
+### Apuntes clase 23/01/24
 
+* hack Value: aquello que pueda ser interesante o valga la pena para que alguien lo quiera.
+* Target of evaluation: objetivo de un atacante.
+* ExploIT:forma definida para romper la seguridad de un IT
+* Zero Day Attack: es el peor enemeigo de cualquier administrado de sistemas porque no se puede hacer nada.
+* Vulnerability: existencia de una debilidad, diseño o implementación.
+* Dalay Chaining: Los piratas informáticos que se salen con la suya con el robo de bases de datos generalmente completan su tarea y luego retroceden para cubrir sus huellas destruyendo registros. 
 
+sistema detector de intrusos.
 
+* Non repudiation: para que el usuario diga que no fue el.
+
+### Vectores de ataque 
+
+* insideer threats 
+* Mobile device security
+* organized 
