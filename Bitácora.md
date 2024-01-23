@@ -19,6 +19,10 @@ Se hizo un breve introducción a los conceptos de seguridad, en donde estuvimos 
 
 Además, tambien se dijo que debe existir un equilibrio entre los aspectos del Usability Triangle.
 
+### Tarea 994 
+
+<img src="./Tarea_999_crear cuenta.png" />
+
 ### Tarea 995: Conceptos basicos de seguridad.
 
 | Concepto    | Definición  |
