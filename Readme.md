@@ -6,6 +6,19 @@ Nombre: Joycelin Monserrat Kiau Sandoval.
 
 Materia: Seguridad de Datos.
 
+### Apuntes de clase 16/01/24
+
+Bienevenida a la clase, desmotracion de diversos aparatos que se utlizan el Seguridad de Datos en donde se realizan pruebas de concepto.
+
+### Apuntes de clase 18/01/24
+
+Se hizo un breve introducción a los conceptos de seguridad, en donde estuvimos viendo el triangulo de CIA y se hablo sobre sus 3 puntos: 
+* confidencialidad:
+* Integridad:
+* Disponibilidad: 
+
+Además, tambien se dijo que debe existir un equilibrio entre los aspectos del Usability Triangle.
+
 ### Tarea 995: Conceptos basicos de seguridad.
 
 | Concepto    | Definición  |
@@ -25,3 +38,7 @@ Materia: Seguridad de Datos.
 ### Tarea 994 
 
 <img src="./tarea_994_ joykiau.png" />
+
+
+
+
