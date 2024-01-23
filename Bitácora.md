@@ -25,7 +25,11 @@ Además, tambien se dijo que debe existir un equilibrio entre los aspectos del U
 
 ### Tarea 998 
 
-<img src="./Tarea_998_crear repositorio.png.png" />
+<img src="./Tarea_998_crear repositorio.png" />
+
+### Tarea 997 
+
+<img src="./Tarea_997_Registrarse_ github_for_education.png" />
 
 ### Tarea 995: Conceptos basicos de seguridad.
 
