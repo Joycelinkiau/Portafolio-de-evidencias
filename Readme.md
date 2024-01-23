@@ -21,3 +21,7 @@ Materia: Seguridad de Datos.
 | Vulnerabilidad:      | Es una debilidad en un sistema que puede ser explotada por una amenaza para comprometer la seguridad del sistema.     | 
 | Amenaza:       | Una amenaza es una acción que puede causar un daño o perjuicio a un sistema. Las amenazas se pueden clasificar en función de su origen, como internas o externas.     | 
 |Impacto:    | Es la consecuencia resultante de la explotación de una amenaza sobre un sistema. Puede incluir pérdida de datos, interrupción del servicio, daño a la reputación, entre otros.        | 
+
+### Tarea 994 
+
+<img src="./tarea_994_ joykiau.png" />
