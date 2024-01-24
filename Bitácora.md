@@ -69,3 +69,74 @@ sistema detector de intrusos.
 * insideer threats 
 * Mobile device security
 * organized 
+
+### Tarea 998 Transcribir los primeros 5 scripts del libro Black Hat Python for Pentesters.
+
+<p>CODE 1</strong></p>
+
+def sum(number_one,number_two):
+
+	number_one_int = convert_integer(number_one)
+
+	number_two_int = convert_integer(number_two)
+
+	result = number_one_int + number_two_int
+
+	return result
+
+def convert_integer(number_string):
+
+	converted_integer = int(number_string)
+
+	return converted_integer
+
+answer = sum("1","2")
+
+<p>CODE 2 TCP CLIENT</strong></p>
+
+import socket
+
+target_host = "www.google.com"
+
+target_port = 80
+
+create a socket object
+
+u client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+connect the client
+
+v client.connect((target_host,target_port))
+
+Send some data
+
+w client.send("GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
+
+receive some data
+
+x response = client.recv(4096)
+
+print response
+
+<strong>CODE 3 UDP CLIENT</strong>
+
+import socket
+
+target_host = "127.0.0.1"
+
+target_port = 80
+
+create a socket object
+
+u client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+send some data
+
+v client.sendto("AAABBBCCC",(target_host,target_port))
+
+receive some data
+
+w data, addr = client.recvfrom(4096)
+
+print data
+
