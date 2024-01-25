@@ -72,71 +72,116 @@ sistema detector de intrusos.
 
 ### Tarea 998 Transcribir los primeros 5 scripts del libro Black Hat Python for Pentesters.
 
-<p>CODE 1</strong></p>
+<strong>CODE 1</strong>
 
-def sum(number_one,number_two):
+	def sum(number_one,number_two):
 
-	number_one_int = convert_integer(number_one)
+		number_one_int = convert_integer(number_one)
 
-	number_two_int = convert_integer(number_two)
+		number_two_int = convert_integer(number_two)
 
-	result = number_one_int + number_two_int
+		result = number_one_int + number_two_int
 
-	return result
+		return result
 
-def convert_integer(number_string):
+	def convert_integer(number_string):
 
-	converted_integer = int(number_string)
+		converted_integer = int(number_string)
 
-	return converted_integer
+		return converted_integer
 
-answer = sum("1","2")
+	answer = sum("1","2")
 
-<p>CODE 2 TCP CLIENT</strong></p>
+<strong>CODE 2 TCP CLIENT</strong>
 
-import socket
+	import socket
 
-target_host = "www.google.com"
+	target_host = "www.google.com"
 
-target_port = 80
+	target_port = 80
 
-create a socket object
+	create a socket object
 
-u client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	u client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-connect the client
+	connect the client
 
-v client.connect((target_host,target_port))
+	v client.connect((target_host,target_port))
 
-Send some data
+	Send some data
 
-w client.send("GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
+	w client.send("GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
 
-receive some data
+	receive some data
 
-x response = client.recv(4096)
+	x response = client.recv(4096)
 
-print response
+	print response
 
 <strong>CODE 3 UDP CLIENT</strong>
 
+	import socket
+
+	target_host = "127.0.0.1"
+
+	target_port = 80
+
+	create a socket object
+
+	u client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+	send some data
+
+	v client.sendto("AAABBBCCC",(target_host,target_port))
+
+	receive some data
+
+	w data, addr = client.recvfrom(4096)
+
+	print data
+
+<strong>CODE 4 TCP SERVER</strong>
+
 import socket
+import threading
 
-target_host = "127.0.0.1"
+bind_ip = "0.0.0.0"
 
-target_port = 80
+bind_port = 9999
 
-create a socket object
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-u client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+u server.bind((bind_ip,bind_port))
 
-send some data
+v server.listen(5)
 
-v client.sendto("AAABBBCCC",(target_host,target_port))
+print "[ * ] Listening on %s:%d" % (bind_ip,bind_port)
 
-receive some data
 
-w data, addr = client.recvfrom(4096)
+# this is our client-handling thread
+def handle_client(client_socket):
 
-print data
+	# print out what the client sends
+	request = client_socket.recv(1024)
 
+	print "[ * ] Received: %s" % request
+
+
+	# send back a packet
+	client_socket.send("ACK!")
+
+	client_socket.close()
+
+while True:
+	
+	client,addr = server.accept()
+	
+	print "[ * ] Accepted connection from: %s:%d" % (addr[0],addr[1])
+
+	# spin up our client thread to handle incoming data
+	
+	client_handler = threading.Thread(target=handle_client,args=(client,))
+
+	client_handler.start()
+
+<strong>CODE 5</strong>
