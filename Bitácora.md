@@ -262,3 +262,13 @@ sistema detector de intrusos.
 			server_loop()
 
 	main()	
+
+
+### Apuntes clase 25/01/24
+No se solicitaron apuntes 
+
+### Tarea 996 
+<img src="./tarea_996_bitácora_apuntes_markdown.png" />
+
+### Tarea 997 
+<img src="./Tarea997_continuaciónGit_Education.png" />
