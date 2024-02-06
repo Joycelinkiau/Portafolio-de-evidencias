@@ -267,8 +267,33 @@ sistema detector de intrusos.
 ### Apuntes clase 25/01/24
 No se solicitaron apuntes 
 
-### Tarea 996 
+### Apuntes clase 01/02/24
+Se realizo una lluvia de ideas sobre los temas que hasta el momento habias visto sobre la materia, para después tener de encaragdo realizar 4 preguntas y respuestas.
+
+°ebenwiber:
+
+°time stack: hora exacta en la que sucede el evento.
+
+°Elasticsearch (opensearch)- se usara para el proyecto. esta en modo cluster estructura que permite centratlizar los eventos que se generan en el sistema operativo,etc con q¿conetnga conexion de red, loes envia a una base de atos no relacional.
+
+°Beat: agentes que instalan el dispsitvo final del cual quieres recolectar.
+
+Elementos que se necesitan para asociar un evento a un usuario o dispositivo particular: -usuarios -tiempo -ip (puede no existir si es un elemento de windowns) -acción -recurso
+
+correlacion con algo necesitas omologar los datos una vez centralizados.
+
+°Logistash- normalizar los datos para poder pasarlos a elascticsearch°
+
+°El objetivo de la estructura es para implementar un SIEM °Norma PCIDS - proteccion de datos TAREAAAA instalar docker desktop - windonws docker -linux opc2: podman
+
+### Tarea 996 bitácora de apuntes usando markdown
 <img src="./tarea_996_bitácora_apuntes_markdown.png" />
 
-### Tarea 997 
+### Tarea 997 continuación Git_Education
 <img src="./Tarea997_continuaciónGit_Education.png" />
+
+### Tarea 990 instalar: docker, python, virtualBox, vagrant, wireshark
+<img src="./Tarea_990 docker.png" />
+<img src="./Tarea_990_python.png" />
+<img src="./Tarea_990_virtualBox.png" />
+<img src="./Tarea_990_wireshark.png" />
