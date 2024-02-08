@@ -297,3 +297,9 @@ correlacion con algo necesitas omologar los datos una vez centralizados.
 <img src="./Tarea_990_python.png" />
 <img src="./Tarea_990_virtualBox.png" />
 <img src="./Tarea_990_wireshark.png" />
+
+# Tarea #985 Realizar los ejercicios de SQLInjection
+<img src="./Tarea_985_SQLInjection_p1.png" />
+<img src="./Tarea_985_SQLInjection_p2.png" />
+<img src="./Tarea_985_SQLInjection_p3.png" />
+<img src="./Tarea_985_SQLInjection_p4.png" />
