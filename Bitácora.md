@@ -376,7 +376,6 @@ Aplicación - @,url,uri Transporte - ports -> TCP UDP Red - Ip Enlace datos - MA
 |53 | DNS|
 |3306 | MySQL|
 |8080 | TOMCAK|
-|:-------------:|:------------:|
 
 
 Netstat -a -n -p TCP Lista de puertos escuchando localmente
@@ -398,4 +397,6 @@ shodan.io -> servicio para scanear por cámaras
 
 # Tarea investigar sobre puertos efímeros 
 | Concepto    | Definición  |
+|:-------------:|:------------:|
+| Puertos Efímeros  |Van desde el 49152 hasta el 65535 y son unos puertos temporales de usar y tirar que el sistema operativo asigna a las aplicaciones cuando los necesitan. Una vez que la conexión ha terminado ese puerto queda libre y puede ser reutilizado nuevamente por cualquier otra aplicación.  | 
 
