@@ -303,3 +303,99 @@ correlacion con algo necesitas omologar los datos una vez centralizados.
 <img src="./Tarea_985_SQLInjection_p2.png" />
 <img src="./Tarea_985_SQLInjection_p3.png" />
 <img src="./Tarea_985_SQLInjection_p4.png" />
+
+
+### Apuntes clase 06/02/24
+Temas vistos:
+5 pilares de la seguridad.
+CIAD TRIAN seguridad,
+USABILITY TRIANGLE usabilidad,funcionalidad y seguridad
+EXPLOIT
+NOT-REPUDETION
+MFA MULTIFACTOR AUTENTICATIONS:agrega una capa de protección al proceso de inicio de sesión.
+HACK VALUE:
+Fireboat, winlogdeat, metricbeat, padobeat
+Tired of evaluation
+Zero day
+Metodo que usan atacanates: "escalamiento de privilegios" tratar de vulnerar un recurso, es decir. trata de gnar el acceso del administrador
+Modelo OSI (7 capas):
+
+Fisica Enlace Red Transporte sesion Presentación Aplicación
+
+Esquemas de respalo a implementar: (en sistemas o paginas web)
+
+full : respaldo completo de la base de datos diferencial: respalo que se hace de los cambios habidos desde que se saco el ultimo respaldo completo incrementa:solo respalda la infro que se agrega a la base de datos despues de hacer el respaldo diferencial, el tiempo se reduce tiene las utlimas queri
+
+Traficos:
+
+Unicas_ de una ip a otra Broadcast-trafico que se nevia a niverl de el¿nlace o a nivel de red, fisico-logico multicast- identifica el numero de dispositivos que estan corriendo en la red
+
+Qué hace un Adminitrado de redes para evitar ataques
+
+implementar dispositivos a nivel de red que no permitan a mas una direccion fisica en un puerto conocido como cazar la direccion fisica, cazar de asociar
+
+hop- dispositivo con puertos que permite intercnoectar compus a nivel fisico switch - le permite leer la capaz a nivel de red. puedes implentar un protocolo 802 que le permite cazar una direccion fisica a un puerto para proteger una red
+
+### Apuntes clase 15/02/24
+Microsoft gestor de BD de SQLserver: permite crear usuarios de la base de datos, dandole permisos sobre que el acceso a la BD
+
+Los servicios de bases de datos trae:
+
+usuarios locales.
+En ambientes grandes tienen varios servidores configurados con cluster que le permite mandara Query se le conoce como Alta disponibilidad, la info se sincroniza. Consume servicios que necesita autenticarse, si es con lo de la compañia requieres de un password.
+
+Existe el servicio active directory: oermite administrar los recursos quw tienes desplegadoz en tu red en terminos de computadoras usuarios, organizarlos por grupos ademas de darles permisos y administrar credenciales, tambien administrar los del sistema operativo. Las compaias controlas las app que tienen descargadas puedes lihar la autenctifcacion de usuarios con los diferentes servicios de la compañia.
+
+Puedes actualizar datos manualmente con el comando gpupdate
+
+Protocolo LDAP - es una solucion que nos permite montar este mismo esquema en linux
+
+Usuarios de aplicacion - una aplicacion para poder autenticar o hacer consultas, crea usuarios en dominio que solo la aplicaion va a usar.
+
+DIferencia Usuarios personas y de aplicacion: La diferencia radica en la configuración.
+
+Ataque de contraseñas basado en diccionario: compara las palabras del dicc.
+Ataque de contraseñas basado en Fuerza bruta: prueba convinacion de caracteres.
+
+Dumpsted diving: basura de otros
+
+### Apuntes clase 20/02/24
+Modelo OSI
+
+Aplicación - @,url,uri Transporte - ports -> TCP UDP Red - Ip Enlace datos - MAC Fisica - Nic
+
+16 bytes { src. port { desti. port
+
+|puerto | indicador|
+|:-------------:|:------------:|
+|80 | HTML|
+|22 | SSH|
+|21 | FTD|
+|23 | TELNET|
+|25 | SMTD|
+|53 | DNS|
+|3306 | MySQL|
+|8080 | TOMCAK|
+|:-------------:|:------------:|
+
+
+Netstat -a -n -p TCP Lista de puertos escuchando localmente
+
+nmap -> scaneo de puertos a toda red
+
+nc
+
+ncat -> scaneo de pueertos a una red
+
+netcat
+
+Ejemplo : nmap 192.168.1.0.0124 syntaxis para ncat: nc ip port
+
+pruebas capaz transporte (443,80,25) a nivel capa red - convertir nombre
+
+shodan.io -> servicio para scanear por cámaras
+
+
+# Tarea investigar sobre puertos efímeros 
+| Concepto    | Definición  |
+
