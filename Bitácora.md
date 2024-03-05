@@ -400,3 +400,72 @@ shodan.io -> servicio para scanear por cámaras
 |:-------------:|:------------:|
 | Puertos Efímeros  |Van desde el 49152 hasta el 65535 y son unos puertos temporales de usar y tirar que el sistema operativo asigna a las aplicaciones cuando los necesitan. Una vez que la conexión ha terminado ese puerto queda libre y puede ser reutilizado nuevamente por cualquier otra aplicación.  | 
 
+
+
+# PARCIAL 2 
+
+## Apuntes clase 27/02/24
+
+AWS certificaciones -puedes iniciar con la que desees. -Descuento por uni 50 %
+
+AWS
+*Lamda - servicio que permite despleguear apps de manera sencilla *Dinamo DB - Big data *Arq. de la nube -
+
+
+Informatica en la nube: -entrega bajo demanda a traves de internet con un sustena de pago por uso, en otras palabras es la computadora de alguien mas -permite ver la infraestructura como software y ya no como hardware
+
+Pc- servidores privados virtuales rentados CIPANEL-
+
+Modelo de infraestructura como hardware: -ciclo largo de adquisii¿cion
+
+Modelo de infraestructura como software: -flexibles, cambiar de ofrma mas rapida, sencilla y rentable las soluciones de hardware -usuario de nube: hablan de ti
+
+cliente: usuario final
+Pago por uso: cobrar lo que usas, tiempo
+
+Pizza as a service: muestra diferentes escenarios (LaaS,PaaS,SaaS:) image
+
+LaaS:TODA RESPONSABILIDAD
+
+PaaS:MEDIA RESPONSABILIDAD
+
+SaaS: MENOS RESPONSABILIDAD
+
+Modelo de implementacion de la nube -Nube -Híbrido
+¿que son los servicios web? software a disposición atraves de internet y utiliza un formato estandarizado
+
+AWS -platafroma en la nube segura que ofrece productos globales
+
+VPC: Nube privada de amazon con ip asociadas para comunicar y crear infraestructuras clineten-servidor
+
+Marco de adopción de la nube una region contiene mas zonas
+
+## Apuntes clase 27/02/24
+
+Curso 1 SECURITY IN THE AWS CLOUD
+
+Bebeficios de la nube
+
+pagas lo que usas -increemento de acts en ing¿fraestructura
+Seguridad TRIAD todo nube debe llevar las 3 caracteristicas ()
+
+5 caracteriscas de la seguridad de la nube *controlabilidad - admi de usuarios en control, visible en aws AMI *auditabilidad - quien tiene acceso, quien realizo una accion, cuando y donde se realizamo la accion visibe es AWS cloudtrall *visibilidad - visibke en awsConfi permite ver lo que tienes instalado en tu nube, el impacto, que es lo que tienes, que ha cambiado y la evidencia *agilidad y automatización - visible en AWSCloudFormation permite usar el concepto de infra en codigo a traves de plantillas,json; permite automatizar; permite asegurar la alta disponibilidad
+
+CURSO 2 PRINCIPIOS DE DISEÑO DE LA SEGURIDAD enla nube
+
+Menor privilegio: garantizar el acceso a usuario de sus tareas, hace cumplir la separación de deberes, obligar alusuario a camibar credenciales cada 90 dias
+Activar trazabilidad: (trazabalidiad-capacidad de rastrear un evento)Monitoreo de acciones y cambios, usar metricas y auditar los recuros en la nube
+Asegure todas las capas : no solo confiar en firewalls, usar mecanimos de seguridad que no le permitan llegar mas alla
+automatizacion de seguridad: escribir crips, monitoreo de aletas: pasivas- avisa de problemas proativas- disparar una accion al detectar 5: proteger los datos ne transito y reposo: mejorar la cueri transito _ PVN todo viaja encriptado ; reposo_ no es el mismo timepo de respuesta cuando este encriptada o cuando no por el proceso de encriptado
+Preparate para eventos de seguridad: tener un pan de respuestas a incidentes que invlucre todas las areas de la compañia, CON EL OBJETIVO DE REDUCIR el impacto 7- minimizar la superficie de ataque: segmentacion de los datos para fijar la seguridad en una parte de acuerdo a la norma
+curso 3 MODELO DE RESPONSABILIDAD COMPARTIDA examen -Uno es responsable de la segu en la nube (en) -el provedor es responsable de la seguridad de la nube (de)
+
+todo depénde del modelo de servicio la segu que tendra
+
+¿DE quien es responsabilidad? Escenario 1
+
+a)actualizar las intacias del SO AWS S2 (Infra como servicio) - cliente b)seguridad fisica del data center - provedor (nada a nivel fisico es del cliente) c)mantener tus datos para ti - provedor d)configuraciones de la maquina virtual Security groups - cliente e)configuraciones de privedores que corren en S2- CLIENTE f)Actualizaciones de Oracle y parches si la instancia corre en RDS - provedor *RDS- para bases de datos relacionales g)Actualizaciones de Oracle y parches si la instancia corre en SE - cliente h)S2 bucquet acceso de integridad- cliente *cliente puede resevrsr instacias fisicas en s2
+
+ESCENARIO 2 a) aseurar que la consola de administrador de aws no sea hackeada? - provedor b) configurar la sub red - cliente a nivel logico es del clinete c) configurar la VPC - cliente d) proteger las regiones de aws contra caidas - provedor todo a nivel de red fisica es de amazon e) asefurar las laves de csh - cliente f) asegurar el aislamiento de la red - provedor g) asefurar las conexiones entre servidores y buquets tengan baja latencia - provedor h) enforzar el multifaltor autentication - cliente (amazon solo ofrece)
+
+MANAGE SERVICES ORGANIZATION *RESPONSABILIDAD Y MOMENTO DE ESCENARIO Certificado - amazon llave -amazon
