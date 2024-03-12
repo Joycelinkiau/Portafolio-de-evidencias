@@ -404,6 +404,12 @@ shodan.io -> servicio para scanear por cámaras
 
 # PARCIAL 2 
 
+# Tarea #984 Realizar los challenge de Bandit en overthewire.
+
+Archivo en .txt
+<img src="./Tarea_984_challenge de Bandit.png" />
+
+
 ## Apuntes clase 27/02/24
 
 AWS certificaciones -puedes iniciar con la que desees. -Descuento por uni 50 %
