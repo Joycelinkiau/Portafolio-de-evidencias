@@ -475,3 +475,9 @@ a)actualizar las intacias del SO AWS S2 (Infra como servicio) - cliente b)seguri
 ESCENARIO 2 a) aseurar que la consola de administrador de aws no sea hackeada? - provedor b) configurar la sub red - cliente a nivel logico es del clinete c) configurar la VPC - cliente d) proteger las regiones de aws contra caidas - provedor todo a nivel de red fisica es de amazon e) asefurar las laves de csh - cliente f) asegurar el aislamiento de la red - provedor g) asefurar las conexiones entre servidores y buquets tengan baja latencia - provedor h) enforzar el multifaltor autentication - cliente (amazon solo ofrece)
 
 MANAGE SERVICES ORGANIZATION *RESPONSABILIDAD Y MOMENTO DE ESCENARIO Certificado - amazon llave -amazon
+
+
+# Tarea de investigación 
+MOUDULO SCAPY: 
+
+*  Scapy es un poderoso programa interactivo de manipulación de paquetes. Es capaz de falsificar o decodificar paquetes de una amplia cantidad de protocolos, enviarlos por cable, capturarlos, hacer coincidir solicitudes y respuestas, y mucho más. Scapy puede manejar fácilmente la mayoría de las tareas clásicas como escaneo, rastreo de rutas, sondeo, pruebas unitarias, ataques o descubrimiento de redes. Puede reemplazar hping, arpspoof, arp-sk, arping, p0f e incluso algunas partes de Nmap, tcpdump y tshark.
